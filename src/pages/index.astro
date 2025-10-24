@@ -1,16 +1,24 @@
 ---
+import Banner from '@/components/Banner.astro';
+import Clients from '@/components/Clients.astro';
+import Contact from '@/components/Contact.astro';
 import Hero from '@/components/Hero.astro';
 import MainPainelGrid from '@/components/MainPainelGrid.astro';
 import PainelNumbers from '@/components/PainelNumbers.astro';
+import ShowTeam from '@/components/ShowTeam.astro';
 import Navigation from '../components/Navigation.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout>
-	<main class="py-5 flex flex-col gap-10">
+	<main class="pt-5 flex flex-col gap-10">
 		<Navigation />
 		<Hero />
 		<MainPainelGrid />
 		<PainelNumbers />
+		<ShowTeam />
+		<Banner />
+		<Clients />
+		<Contact />
 	</main>
 </BaseLayout>
